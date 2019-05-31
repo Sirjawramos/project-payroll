@@ -69,5 +69,16 @@ $(function(){
         });
 
     });
+   
+
+    // Search Button Function
+    $("#btnSearch").click(function() {
+        $("#myTable tbody tr").show();
+        if($("#search").val().length > 0) {
+            $("#myTable tbody tr").filter(function(index, elm) {
+                return $(elm).html().toUpperCase().indexOf($("#search").val().toUpperCase()) < 0;
+            }).hide();
+        }
+    });
 
 })
