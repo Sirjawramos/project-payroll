@@ -159,4 +159,17 @@ $(function(){
 
     });
 
+    //Get Function to Populate Salary Structure Table
+    $.getJSON(salary, function(data){
+        var employeeSal = '';
+        $.each(data, function(key, val){   
+            employeeSal += '<tr>';
+            employeeSal += "<td id=''"+key+"''>"+val.id+"</td>";
+            employeeSal += "<td id=''"+key+"''>"+val.salary+"</td>";
+            employeeSal += '</tr>';
+        });
+
+        $('#salTable').append(employeeSal);
+
+    });
 })
