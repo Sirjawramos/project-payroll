@@ -172,4 +172,49 @@ $(function(){
         $('#salTable').append(employeeSal);
 
     });
+
+
+    //Update Button Function
+    $('#btn-update').on('click', function(event){
+        event.preventDefault();
+        var name = $('#update-name').val();
+        var address = $('#update-add').val();
+        var role = $('#update-role').val();
+        var gender = $('#update-gender').val();
+        var phone = $('#update-phone').val();
+        var email = $('#update-email').val();
+        var level = $('#update-level').val();
+        var qualification = $('#update-qual').val();
+        var paid = $('#update-paid').val();
+        var id = $('#update-id').val();
+
+        var updateEmployee = {
+            name: name,
+            address: address,
+            role: role,
+            gender: gender,
+            phone: phone,
+            email: email,
+            level:  level,
+            qualification: qualification,
+            paid: paid
+        };
+
+        //Put Method Call
+        $.ajax({
+            method: "PUT",
+            url: site + id,
+            data: updateEmployee,
+            cache: false,
+            success: function(){
+                alert("Employee Infomation has been updated!");
+                $('#updateform').get(0).reset();
+
+            },
+            error: function(){
+                alert("Failed to update");
+            }
+        });
+
+    });
 })
