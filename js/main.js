@@ -69,7 +69,7 @@ $(function(){
         });
 
     });
-   
+
 
     // Search Button Function
     $("#btnSearch").click(function() {
@@ -80,5 +80,24 @@ $(function(){
             }).hide();
         }
     });
+
+
+    //Delete Button Function
+    $('#myTable').delegate('.delete-btn', 'click', function(){
+        var del = $(this).attr('data-id');
+
+        //Delete Method Call
+        $.ajax({
+            method: "DELETE",
+            url: site + del,
+            success: function(){
+                alert('Employee is no longer on the database');
+            },
+            error: function() {
+                alert('Failed to delete');
+            }
+        });
+    });    
+
 
 })
