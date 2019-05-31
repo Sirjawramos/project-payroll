@@ -9,7 +9,7 @@
       "email": "jocu@gmail.com",
       "level": "3",
       "id": 1,
-      "paid": "Yes",
+      "paid": "No",
       "qualification": "BSc"
     },
     {
@@ -20,7 +20,7 @@
       "phone": "8094788579",
       "email": "ogba_a@gmail.com",
       "level": "1",
-      "paid": "No",
+      "paid": "Yes",
       "id": 2,
       "qualification": "Waec"
     },

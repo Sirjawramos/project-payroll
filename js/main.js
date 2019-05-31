@@ -110,7 +110,7 @@ $(function(){
             employeePay += "<td id=''"+key+"''>"+val.level+"</td>";
             employeePay += "<td id=''"+key+"''>"+val.qualification+"</td>";
             employeePay += "<td id=''"+key+"''>"+val.paid+"</td>";
-            employeePay += '<td <input class= "pay-btn" data-id="';
+            employeePay += '<td <input class= "pay-btn btn-success" data-id="';
             employeePay += val.id + '" type= "button"">Pay</td>';
             employeePay += '<td <input class= "reset-btn btn-success" data-id="';
             employeePay += val.id + '" type= "button"">Reset</td>';
