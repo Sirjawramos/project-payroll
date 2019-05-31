@@ -1,0 +1,110 @@
+{
+  "users": [
+    {
+      "name": "John Cusack",
+      "address": "Egba",
+      "role": "Supervisor",
+      "gender": "Male",
+      "phone": "8093452345",
+      "email": "jocu@gmail.com",
+      "level": "3",
+      "id": 1,
+      "paid": "No",
+      "qualification": "BSc"
+    },
+    {
+      "name": "Anthony Ogba",
+      "address": "Akoka",
+      "role": "Security",
+      "gender": "Male",
+      "phone": "8094788579",
+      "email": "ogba_a@gmail.com",
+      "level": "1",
+      "paid": "Yes",
+      "id": 2,
+      "qualification": "Waec"
+    },
+    {
+      "name": "Obot Princess",
+      "address": "Oshodi",
+      "role": "PA",
+      "gender": "Female",
+      "phone": "8096754633",
+      "email": "pobo@gmail.com",
+      "level": "3",
+      "qualification": "BSc",
+      "paid": "Yes",
+      "id": 3
+    },
+    {
+      "name": "Marian Bozo",
+      "address": "Ojodu",
+      "role": "Manager",
+      "gender": "Female",
+      "phone": "7067546787",
+      "email": "maryb@gmail.com",
+      "level": "4",
+      "paid": "No",
+      "id": 4,
+      "qualification": "MSc"
+    },
+    {
+      "name": "Nkwo Irogi",
+      "address": "Ikeja",
+      "role": "Human Resources",
+      "gender": "Male",
+      "phone": "8097563421",
+      "email": "nkogi@gmail.com",
+      "level": "3",
+      "paid": "No",
+      "id": 5,
+      "qualification": "BSc"
+    },
+    {
+      "name": "Mark Peter",
+      "address": "Victoria Island",
+      "role": "Manager",
+      "gender": "Male",
+      "phone": "7095346723",
+      "email": "petman@gmail.com",
+      "level": "4",
+      "paid": "No",
+      "id": 6,
+      "qualification": "MSc"
+    },
+    {
+      "name": "Ajala Esther",
+      "address": "Ikorodu",
+      "role": "Accountant",
+      "gender": "Female",
+      "phone": "7089234587",
+      "email": "aja1@gmail.com",
+      "level": "3",
+      "paid": "No",
+      "id": 7,
+      "qualification": "BSc"
+    }
+  ],
+  "salary": [
+    {
+      "id": 1,
+      "salary": "$50000"
+    },
+    {
+      "id": 2,
+      "salary": "$70000"
+    },
+    {
+      "id": 3,
+      "salary": "$110000"
+    },
+    {
+      "id": 4,
+      "salary": "$150000"
+    },
+    {
+      "id": 5,
+      "salary": "$200000"
+    }
+  ]
+}
