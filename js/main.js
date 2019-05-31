@@ -100,4 +100,23 @@ $(function(){
     });    
 
 
-})
+    // Get Method to Populate Pay Tab
+    $.getJSON(site, function(data){
+        var employeePay = '';
+        $.each(data, function(key, val){
+            employeePay += '<tr>';
+            employeePay += "<td id=''"+key+"''>"+val.name+"</td>";
+            employeePay += "<td id=''"+key+"''>"+val.role+"</td>";
+            employeePay += "<td id=''"+key+"''>"+val.level+"</td>";
+            employeePay += "<td id=''"+key+"''>"+val.qualification+"</td>";
+            employeePay += "<td id=''"+key+"''>"+val.paid+"</td>";
+            employeePay += '<td <input class= "pay-btn" data-id="';
+            employeePay += val.id + '" type= "button"">Pay</td>';
+            employeePay += '<td <input class= "reset-btn btn-success" data-id="';
+            employeePay += val.id + '" type= "button"">Reset</td>';
+            employeePay += '</tr>';
+        });
+
+        $('#payTable').append(employeePay);
+
+    })
