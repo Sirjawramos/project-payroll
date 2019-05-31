@@ -119,4 +119,25 @@ $(function(){
 
         $('#payTable').append(employeePay);
 
+    });
+    
+    //Pay Button Function
+    $('#payTable').delegate('.pay-btn', 'click', function(){
+        var pay = $(this).attr('data-id');
+
+        //Patch Method Call
+        $.ajax({
+            method: "PATCH",
+            url: site + pay,
+            data: {paid: "Yes"},
+            success: function(){
+                alert('Employee have been paid');
+            },
+            error: function() {
+                alert('Failed to pay Employess');
+            }
+        });
+
+    });
+    
     })
