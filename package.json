@@ -1,0 +1,21 @@
+{
+  "name": "project-payroll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github/Sirjawramos/project-payroll.git"
+  },
+  "keywords": [
+    "payroll"
+  ],
+  "author": "Victor",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^24.8.0"
+  }
+}
