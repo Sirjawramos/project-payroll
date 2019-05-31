@@ -120,7 +120,7 @@ $(function(){
         $('#payTable').append(employeePay);
 
     });
-    
+
     //Pay Button Function
     $('#payTable').delegate('.pay-btn', 'click', function(){
         var pay = $(this).attr('data-id');
@@ -139,5 +139,24 @@ $(function(){
         });
 
     });
-    
-    })
+
+    //Reset Button Function
+    $('#payTable').delegate('.reset-btn', 'click', function(){
+        var reset = $(this).attr('data-id');
+
+        //Patch Method Call
+        $.ajax({
+            method: "PATCH",
+            url: site + reset,
+            data: {paid: "No"},
+            success: function(){
+                alert('Has been Reset');
+            },
+            error: function() {
+                alert('Failed to Rest');
+            }
+        });
+
+    });
+
+})
